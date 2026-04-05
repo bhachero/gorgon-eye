@@ -8,13 +8,15 @@ Esta metodología dialoga con la tradición iconológica de Aby Warburg y la fil
 
 ## 🖼️ Resultados: La Constelación Fotogramática
 
-Los scripts permiten generar representaciones que operan en dos escalas: la macroscópica (espectrograma) y la analítica (dinamograma).
+Los scripts permiten generar representaciones que operan en dos escalas fundamentales del análisis visual: la **condensación cromática** (espectrograma) y el **despliegue del gesto** (dinamograma).
 
-| Proyecto | Espectrograma (Condensación Cromática) | Dinamograma (Análisis del Gesto) |
+| Proyecto | Espectrograma (Escala Macro) | Dinamograma (Escala Analítica) |
 | :--- | :--- | :--- |
+| **Caudillo** | ![Espectrograma Caudillo](examples/caudillo_espectrogram.webp) | ![Dinamograma Caudillo](examples/caudillo_dinamogram_1.webp) |
 | **Exile** | ![Espectrograma Exile](examples/exile_espectrogram.webp) | ![Dinamograma Exile](examples/exile_dinamogram_1.webp) |
 | **Reality 20** | ![Espectrograma Reality](examples/reality_20_espectrogram.webp) | ![Dinamograma Reality](examples/reality_20_dinamogram_1.webp) |
-| **Caudillo** | *-* | ![Dinamograma Caudillo](examples/caudillo_dinamogram_1.webp) |
+
+> **Nota metodológica:** Los dinamogramas aquí mostrados representan la primera hoja de una serie técnica. Este dispositivo permite navegar por la *Pathosformel* y la supervivencia de las formas a lo largo de todo el tejido fílmico.
 
 ---
 
