@@ -51,12 +51,20 @@ El sistema está diseñado para que los scripts "viajen" según la etapa del pro
 
 ---
 
-## ⚙️ Requisitos del Sistema
+### ⚙️ Requisitos del Sistema
 
-El motor de procesado en todos los scripts es **FFmpeg**.
+Para que los scripts funcionen correctamente, es necesario contar con los siguientes componentes:
 
-1. **FFmpeg**: Es obligatorio tenerlo instalado en el sistema y configurado en el `PATH` (o colocar el ejecutable `ffmpeg.exe` en la misma carpeta que los scripts).
-2. **Python 3.8+** *(Solo para la carpeta `/v2_Python_Scripts`)*.
+1.  **FFmpeg (Obligatorio)**: Es el motor de procesado de todos los scripts.
+    * Debe estar instalado y configurado en el **PATH** del sistema.
+    * **Alternativa**: Colocar el ejecutable `ffmpeg.exe` directamente en la misma carpeta que los scripts.
+    * Puedes descargarlo en [ffmpeg.org](https://ffmpeg.org/).
+
+2.  **Python 3.8+**: Necesario únicamente para ejecutar las herramientas de la carpeta `/v2_Python`.
+
+3.  **Dependencias de Python**:
+    * **Pillow (>=10.0.0)**: Se utiliza para la manipulación y composición avanzada de imágenes en el generador de espectrogramas.
+    * **Instalación**: `pip install -r requirements.txt`.
 
 ## 🚀 Instalación (Versión Python)
 
