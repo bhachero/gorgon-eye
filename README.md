@@ -1,64 +1,37 @@
-# gorgon-eye
+# GORGON EYE: Herramientas de Análisis Fotogramático 👁️🎞️
 
-Suite de herramientas para la arqueología e investigación cinematográfica. Permite la extracción precisa de fotogramas y la generación de dinamogramas y espectrogramas visuales para el análisis métrico y estético del flujo fílmico. Ideal para el estudio de la evolución del montaje, el color y el movimiento en el tiempo.
+Repositorio oficial de los scripts metodológicos desarrollados para el proyecto **GORGON Atlas**, dedicado a la extracción programática de fotogramas y la generación de instrumentos analíticos originales: el **dinamograma fílmico** y el **espectrograma**.
 
-Este repositorio contiene una suite de procesamiento de video diseñada para el análisis métrico y estético de materiales fílmicos. A través de la extracción de fotogramas y la creación de representaciones sintéticas (dinamogramas y espectrogramas), el software facilita el estudio del montaje, el color y el movimiento en la historia del cine.
+Esta metodología dialoga con la tradición iconológica de Aby Warburg y la filosofía de la imagen dialéctica de Walter Benjamin, trasladando esa herencia visual y espectral al análisis contemporáneo de la imagen en movimiento.
 
-🛠️ Componentes
+## 📁 Estructura del Repositorio
 
-    Extractor de Fotogramas: Descompone archivos de video en secuencias de imágenes de alta fidelidad para un análisis detallado cuadro por cuadro.
+Para facilitar su adopción tanto por investigadores de Humanidades Digitales sin experiencia en programación como por usuarios avanzados, las herramientas se dividen en dos enfoques:
 
-    Compositor de Dinamogramas: Genera una imagen única que comprime la evolución espacial de los fotogramas, permitiendo visualizar el ritmo visual y el flujo de la acción.
+* **`/v1_Windows_BAT`**: Scripts ejecutables nativos para Windows (`.bat`). Constituyen la versión más accesible de la metodología. No requieren instalación de entornos virtuales; basta con hacer doble clic para ejecutar las extracciones y generar las rejillas visuales.
+* **`/v2_Python_Scripts`**: Scripts avanzados en Python (`.py`). Ofrecen mayor flexibilidad, manejo de conversiones cruzadas (ej. WebP) y control sobre el *padding* y la normalización de la relación de aspecto.
+* **`/examples`**: Galería de dinamogramas y espectrogramas generados con estas herramientas.
 
-    Compositor de Espectrogramas: Crea una huella cromática y lumínica del video, extrayendo los valores de color predominantes para estudiar la paleta y la exposición a través del tiempo.
+## ⚙️ Requisitos del Sistema
 
+El motor algorítmico que procesa y teje las imágenes en todos los scripts es **FFmpeg**.
 
-🚀 Instalación
+1. **FFmpeg**: Es obligatorio tenerlo instalado en el sistema y configurado en el `PATH` (o colocar el ejecutable `ffmpeg.exe` en la misma carpeta que los scripts `.bat`).
+2. **Python 3.8 o superior** *(Requerido únicamente para usar los scripts de la carpeta `/v2_Python_Scripts`)*.
 
-Bash
+## ⚙️Flujo de trabajo básico:
 
-# Clonar el repositorio
-git clone https://github.com/tu-usuario/gorgon-eye.git
+   1. Extrae los fotogramas a intervalos regulares usando el script "Extractor".
 
-# Instalar dependencias (se recomienda usar un entorno virtual)
+   2. Ubica las imágenes resultantes en una única carpeta.
+
+   3. Ejecuta el generador de dinamogramas o espectrogramas dentro de esa carpeta para componer la constelación fotogramática.
+
+## 🚀 Instalación y Uso (Versión Python)
+
+Si deseas utilizar la versión avanzada, clona este repositorio e instala las dependencias necesarias:
+
+```bash
+git clone [https://github.com/bhachero/gorgon-eye.git](https://github.com/bhachero/gorgon-eye.git)
+cd gorgon-atlas
 pip install -r requirements.txt
-
-
-📋 Uso
-
-Extracción de fotogramas
-
-python extractor.py --input video.mp4 --output /frames
-
-Generación de Dinamograma
-
-python dinamograma.py --input /frames --mode horizontal
-
-Generación de Espectrograma
-
-python espectrograma.py --input /frames --type color
-
-
-🏛️ Aplicaciones en Arqueología Cinematográfica
-
-    Análisis del Montaje: Identificación de patrones de corte y duración de planos.
-
-    Estudio del Color: Estudio de la degradación o el uso intencional de paletas en películas restauradas.
-
-    Estudio de la Luz: Estudio de la iluminación y la dirección de fotografía.
-
-    Huellas de Movimiento: Visualización de la puesta en escena y el movimiento de cámara mediante la superposición de datos.
-
-
-📄 Licencia
-
-Este proyecto está bajo la Licencia [MIT/GPL] - ver el archivo LICENSE para detalles.
-
-
-⚠️ Estado del Proyecto
-
-Este repositorio se encuentra en transición:
-
-    Beta (Estable): Localizada en /v1-beta. Es la versión utilizada para generar todo el contenido visual y analítico de Gorgon Atlas (https://gorgon.lovable.app/). Recomendada para uso inmediato.
-
-    Python Version (Alpha): Localizada en /v2-python. Una implementación más flexible y programática que se encuentra actualmente en fase de pruebas.
