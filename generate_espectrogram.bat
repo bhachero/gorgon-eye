@@ -39,7 +39,7 @@ set /a "ROWS=(%SELECTED% + %COLS% - 1) / %COLS%"
 echo [+] Generando layout de %COLS%x%ROWS%...
 
 :: 4. RENDERIZADO PROFESIONAL
-:: Usamos 'force_original_aspect_ratio' para que no haya deformación.
+:: Usamos 'force_original_aspect_ratio' para que no haya deformación (estilo Gianikian puro).
 ffmpeg -f concat -safe 0 -i lista_final.txt -vf "scale=%SCALE_SIZE%:%SCALE_SIZE%:force_original_aspect_ratio=decrease,pad=%SCALE_SIZE%:%SCALE_SIZE%:(ow-iw)/2:(oh-ih)/2:color=black,tile=%COLS%x%ROWS%:padding=4:margin=15:color=black" -update 1 -frames:v 1 -q:v 1 "espectrograma.jpg"
 
 del lista_final.txt
