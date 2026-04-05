@@ -28,7 +28,7 @@ The scripts generate representations that operate at two fundamental scales of v
 
 ## 🎞️ Basic Workflow
 
-The system is designed so that the scripts "travel" according to the stage of the process you are at:
+The system is designed so that the scripts "travels" according to the stage of the process you are at:
 
 1. **Extraction:** 📸
    - Place the `extractor.bat` script in the folder where your video is located.
