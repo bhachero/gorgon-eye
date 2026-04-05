@@ -1,4 +1,4 @@
-# GORGON EYE: Herramientas de Análisis Fotogramático 👁️🎞️
+# GORGON EYE: Herramientas de Análisis Fotogramático 👁️
 
 Repositorio oficial de los scripts metodológicos desarrollados para el proyecto **GORGON Atlas**, dedicado a la extracción programática de fotogramas y la generación de instrumentos analíticos originales: el **dinamograma fílmico** y el **espectrograma**.
 
@@ -19,7 +19,7 @@ El motor algorítmico que procesa y teje las imágenes en todos los scripts es *
 1. **FFmpeg**: Es obligatorio tenerlo instalado en el sistema y configurado en el `PATH` (o colocar el ejecutable `ffmpeg.exe` en la misma carpeta que los scripts `.bat`).
 2. **Python 3.8 o superior** *(Requerido únicamente para usar los scripts de la carpeta `/v2_Python_Scripts`)*.
 
-## ⚙️ Flujo de trabajo básico:
+## 🎞️ Flujo de trabajo básico:
 
    1. Extrae los fotogramas a intervalos regulares usando el script "Extractor".
 
