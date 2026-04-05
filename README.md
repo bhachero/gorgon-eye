@@ -19,19 +19,29 @@ El motor algorítmico que procesa y teje las imágenes en todos los scripts es *
 1. **FFmpeg**: Es obligatorio tenerlo instalado en el sistema y configurado en el `PATH` (o colocar el ejecutable `ffmpeg.exe` en la misma carpeta que los scripts `.bat`).
 2. **Python 3.8 o superior** *(Requerido únicamente para usar los scripts de la carpeta `/v2_Python_Scripts`)*.
 
-## 🎞️ Flujo de trabajo básico:
+## 🎞️ Flujo de trabajo básico
 
-   1. Extrae los fotogramas a intervalos regulares usando el script "Extractor".
+El sistema está diseñado para que los scripts "viajen" según la etapa del proceso en la que te encuentres:
 
-   2. Ubica las imágenes resultantes en una única carpeta.
+  1.  Extracción (La "Mirada Sostenida"): 📸
+        Coloca el script extractor_sostenido.bat en la carpeta donde tienes tu vídeo.
+        Haz doble clic. El script creará automáticamente una carpeta llamada FRAMES_GEN donde se guardarán todos los fotogramas extraídos (uno cada 5 segundos).
 
-   3. Ejecuta el generador de dinamogramas o espectrogramas dentro de esa carpeta para componer la constelación fotogramática.
+  2.  Preparación del Corpus: 📂
+        Entra en la carpeta FRAMES_GEN.
+        Copia o mueve los scripts generadores (generador_dinamograma.bat o generador_espectrograma.bat) dentro de esta carpeta, mezclados con las imágenes.
+
+  3.  Tejido de la Constelación: 🕸️
+        Ejecuta el generador elegido desde dentro de FRAMES_GEN.
+        El script detectará automáticamente todos los frames y creará el dinamograma (en varias hojas secuenciales) o el espectrograma (en una sola imagen condensada).
 
 ## 🚀 Instalación y Uso (Versión Python)
 
-Si deseas utilizar la versión avanzada, clona este repositorio e instala las dependencias necesarias:
+Si deseas utilizar la versión avanzada para mayor control de formatos y metadatos, clona el repositorio e instala las dependencias:
+Bash
 
-```bash
-git clone [https://github.com/bhachero/gorgon-eye.git](https://github.com/bhachero/gorgon-eye.git)
-cd gorgon-atlas
+git clone https://github.com/bhachero/gorgon-eye.git
+cd gorgon-eye
 pip install -r requirements.txt
+
+Condición de uso: Recuerda que tanto para la versión .bat como para la de Python, es imprescindible tener FFmpeg instalado en el sistema o el archivo ffmpeg.exe presente en la carpeta de ejecución.
