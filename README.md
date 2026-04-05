@@ -6,6 +6,11 @@ Esta metodología dialoga con la tradición iconológica de Aby Warburg y la fil
 
 ---
 
+Cite this software:
+Hachero, B. (2026). Gorgon Eye: Photogrammatic Atlas Toolkit (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.19426974
+
+---
+
 ## 🖼️ Resultados: La Constelación Fotogramática
 
 Los scripts permiten generar representaciones que operan en dos escalas fundamentales del análisis visual: la **condensación cromática** (espectrograma) y el **despliegue del gesto** (dinamograma).
