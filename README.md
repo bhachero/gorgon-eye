@@ -4,6 +4,7 @@ Official repository of the methodological scripts developed for the GORGON Atlas
 
 This methodology engages with Aby Warburg's iconological tradition and Walter Benjamin's philosophy of the dialectical image, transposing that visual and spectral heritage into the contemporary analysis of the moving image. The Dynamogram recovers Aby Warburg's notion of "energetic trace," while the Spectrogram applies Walter Benjamin's "spectral analysis" (Spektralanalyse).
 
+Gorgon Atlas: https://gorgon.lovable.app/atlas
 
 ---
 
