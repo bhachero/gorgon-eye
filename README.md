@@ -51,6 +51,15 @@ The system is designed so that the scripts "travels" according to the stage of t
 
 ---
 
+## License
+
+This project is licensed under the **AGPL-3.0** for open source use.
+
+For commercial use without open-sourcing your code, a **commercial license** 
+is available. Contact [bhachero@us.es](mailto:bhachero@us.es) for pricing.
+
+---
+
 ### ⚙️ System Requirements
 
 For the scripts to function correctly, the following components are required:
@@ -73,3 +82,4 @@ Python 3.8+: Required only for running the tools in the `/v2_Python` folder.
 git clone [https://github.com/bhachero/gorgon-eye.git](https://github.com/bhachero/gorgon-eye.git)
 cd gorgon-eye
 pip install -r requirements.txt
+
