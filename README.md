@@ -23,13 +23,13 @@ El motor algorítmico que procesa y teje las imágenes en todos los scripts es *
 
 El sistema está diseñado para que los scripts "viajen" según la etapa del proceso en la que te encuentres:
 
-  1.  Extracción (La "Mirada Sostenida"): 📸
-        Coloca el script extractor_sostenido.bat en la carpeta donde tienes tu vídeo.
+  1.  Extracción: 📸
+        Coloca el script extractor.bat en la carpeta donde tienes tu vídeo.
         Haz doble clic. El script creará automáticamente una carpeta llamada FRAMES_GEN donde se guardarán todos los fotogramas extraídos (uno cada 5 segundos).
 
   2.  Preparación del Corpus: 📂
         Entra en la carpeta FRAMES_GEN.
-        Copia o mueve los scripts generadores (generador_dinamograma.bat o generador_espectrograma.bat) dentro de esta carpeta, mezclados con las imágenes.
+        Copia o mueve los scripts generadores (generate_dinamogram.bat o generate_espectrogram.bat) dentro de esta carpeta, mezclados con las imágenes.
 
   3.  Tejido de la Constelación: 🕸️
         Ejecuta el generador elegido desde dentro de FRAMES_GEN.
