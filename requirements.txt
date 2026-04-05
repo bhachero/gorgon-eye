@@ -1,0 +1,2 @@
+# Dependencias para los scripts de GORGON Atlas (v2_Python)
+Pillow>=10.0.0
