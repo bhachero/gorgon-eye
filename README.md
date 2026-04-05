@@ -4,44 +4,58 @@ Repositorio oficial de los scripts metodológicos desarrollados para el proyecto
 
 Esta metodología dialoga con la tradición iconológica de Aby Warburg y la filosofía de la imagen dialéctica de Walter Benjamin, trasladando esa herencia visual y espectral al análisis contemporáneo de la imagen en movimiento.
 
-## 📁 Estructura del Repositorio
+---
 
-Para facilitar su adopción tanto por investigadores de Humanidades Digitales sin experiencia en programación como por usuarios avanzados, las herramientas se dividen en dos enfoques:
+## 🖼️ Resultados: La Constelación Fotogramática
 
-* **`/v1_Windows_BAT`**: Scripts ejecutables nativos para Windows (`.bat`). Constituyen la versión más accesible de la metodología. No requieren instalación de entornos virtuales; basta con hacer doble clic para ejecutar las extracciones y generar las rejillas visuales.
-* **`/v2_Python_Scripts`**: Scripts avanzados en Python (`.py`). Ofrecen mayor flexibilidad, manejo de conversiones cruzadas (ej. WebP) y control sobre el *padding* y la normalización de la relación de aspecto.
-* **`/examples`**: Galería de dinamogramas y espectrogramas generados con estas herramientas.
+Los scripts permiten generar representaciones que operan en dos escalas fundamentales del análisis visual: la **condensación cromática** (espectrograma) y el **despliegue del gesto** (dinamograma).
 
-## ⚙️ Requisitos del Sistema
+| Proyecto | Espectrograma (Escala Macro) | Dinamograma (Escala Analítica) |
+| :--- | :--- | :--- |
+| **Caudillo** | ![Espectrograma Caudillo](examples/caudillo_espectrogram.webp) | ![Dinamograma Caudillo](examples/caudillo_dinamogram_1.webp) |
+| **Exile** | ![Espectrograma Exile](examples/exile_espectrogram.webp) | ![Dinamograma Exile](examples/exile_dinamogram_1.webp) |
+| **Reality 20** | ![Espectrograma Reality](examples/reality_20_espectrogram.webp) | ![Dinamograma Reality](examples/reality_20_dinamogram_1.webp) |
 
-El motor algorítmico que procesa y teje las imágenes en todos los scripts es **FFmpeg**.
+> **Nota metodológica:** Los dinamogramas aquí mostrados representan la primera hoja de una serie técnica. Este dispositivo permite navegar por la *Pathosformel* y la supervivencia de las formas a lo largo de todo el tejido fílmico.
 
-1. **FFmpeg**: Es obligatorio tenerlo instalado en el sistema y configurado en el `PATH` (o colocar el ejecutable `ffmpeg.exe` en la misma carpeta que los scripts `.bat`).
-2. **Python 3.8 o superior** *(Requerido únicamente para usar los scripts de la carpeta `/v2_Python_Scripts`)*.
+---
 
 ## 🎞️ Flujo de trabajo básico
 
 El sistema está diseñado para que los scripts "viajen" según la etapa del proceso en la que te encuentres:
 
-  1.  Extracción: 📸
-        Coloca el script extractor.bat en la carpeta donde tienes tu vídeo.
-        Haz doble clic. El script creará automáticamente una carpeta llamada FRAMES_GEN donde se guardarán todos los fotogramas extraídos (uno cada 5 segundos).
+1. **Extracción:** 📸
+   - Coloca el script `extractor.bat` en la carpeta donde tienes tu vídeo.
+   - Haz doble clic. El script creará automáticamente una carpeta llamada **`FRAMES_GEN`** donde se guardarán todos los fotogramas extraídos (uno cada 5 segundos por defecto).
 
-  2.  Preparación del Corpus: 📂
-        Entra en la carpeta FRAMES_GEN.
-        Copia o mueve los scripts generadores (generate_dinamogram.bat o generate_espectrogram.bat) dentro de esta carpeta, mezclados con las imágenes.
+2. **Preparación del Corpus:** 📂
+   - Entra en la carpeta **`FRAMES_GEN`**.
+   - **Copia o mueve** los scripts generadores (`generate_dinamogram.bat` o `generate_espectrogram.bat`) **dentro** de esta carpeta, junto a las imágenes.
 
-  3.  Tejido de la Constelación: 🕸️
-        Ejecuta el generador elegido desde dentro de FRAMES_GEN.
-        El script detectará automáticamente todos los frames y creará el dinamograma (en varias hojas secuenciales) o el espectrograma (en una sola imagen condensada).
+3. **Tejido de la Constelación:** 🕸️
+   - Ejecuta el generador elegido desde dentro de **`FRAMES_GEN`**.
+   - El script detectará automáticamente todos los frames y creará el **dinamograma** (en varias hojas secuenciales) o el **espectrograma** (en una sola imagen condensada).
 
-## 🚀 Instalación y Uso (Versión Python)
+---
 
-Si deseas utilizar la versión avanzada para mayor control de formatos y metadatos, clona el repositorio e instala las dependencias:
-Bash
+## 📁 Estructura del Repositorio
 
-git clone https://github.com/bhachero/gorgon-eye.git
+* **`/v1_Windows_BAT`**: Scripts ejecutables nativos para Windows (`.bat`). La versión más accesible: doble clic y listo.
+* **`/v2_Python_Scripts`**: Scripts avanzados (`.py`). Ofrecen mayor flexibilidad, manejo de formatos como WebP y control sobre la normalización de aspecto.
+* **`/examples`**: Galería de resultados obtenidos.
+
+---
+
+## ⚙️ Requisitos del Sistema
+
+El motor de procesado en todos los scripts es **FFmpeg**.
+
+1. **FFmpeg**: Es obligatorio tenerlo instalado en el sistema y configurado en el `PATH` (o colocar el ejecutable `ffmpeg.exe` en la misma carpeta que los scripts).
+2. **Python 3.8+** *(Solo para la carpeta `/v2_Python_Scripts`)*.
+
+## 🚀 Instalación (Versión Python)
+
+```bash
+git clone [https://github.com/bhachero/gorgon-eye.git](https://github.com/bhachero/gorgon-eye.git)
 cd gorgon-eye
 pip install -r requirements.txt
-
-Condición de uso: Recuerda que tanto para la versión .bat como para la de Python, es imprescindible tener FFmpeg instalado en el sistema o el archivo ffmpeg.exe presente en la carpeta de ejecución.
