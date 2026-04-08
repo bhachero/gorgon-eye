@@ -13,6 +13,18 @@ Hachero, B. (2026). Gorgon Eye: Photogrammatic Atlas Toolkit (v1.0.0). Zenodo. h
 
 ---
 
+## 👥 ¿Estás usando Gorgon Eye? / Are you using Gorgon Eye?
+
+Me interesa saber en qué proyectos se está usando esta herramienta.
+Si la estás usando, experimentando con ella o te ha resultado útil, escríbeme.
+
+I'd genuinely like to know what projects this tool is finding its
+way into. If you're using it in your research or practice, drop me a line.
+
+📧 bhachero@us.es
+
+---
+
 ## 🖼️ Results: The Photogrammatic Constellation
 
 The scripts generate representations that operate at two fundamental scales of visual analysis: chromatic condensation (spectrogram) and gestural unfolding (dynamogram).
