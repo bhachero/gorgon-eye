@@ -8,8 +8,12 @@ Gorgon Atlas: https://gorgon.lovable.app/atlas
 
 ---
 
-Cite this software:
-Hachero, B. (2026). Gorgon Eye: Photogrammatic Atlas Toolkit (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.19426974
+How to Cite
+
+If you use Gorgon Eye in your research or project, please cite it as follows:
+
+Hachero, B. (2026). Gorgon Eye: Photogrammatic Atlas Toolkit (v1.0.0). Zenodo. [https://doi.org/10.5281/zenodo.19426974](https://doi.org/10.5281/zenodo.19426974)
+
 
 BibTeX for reference managers
 
