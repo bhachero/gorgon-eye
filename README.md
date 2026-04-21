@@ -11,6 +11,22 @@ Gorgon Atlas: https://gorgon.lovable.app/atlas
 Cite this software:
 Hachero, B. (2026). Gorgon Eye: Photogrammatic Atlas Toolkit (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.19426974
 
+BibTeX for reference managers
+
+@software{hachero_2026_19426974,
+  author       = {Hachero, B.},
+  title        = {Gorgon Eye: Photogrammatic Atlas Toolkit},
+  month        = apr,
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.19426974},
+  url          = {[https://doi.org/10.5281/zenodo.19426974](https://doi.org/10.5281/zenodo.19426974)}
+}
+
+
+This software is indexed in OpenAIRE and preserved in Software Heritage.
+
 ---
 
 ## 👥 ¿Estás usando Gorgon Eye? / Are you using Gorgon Eye?
