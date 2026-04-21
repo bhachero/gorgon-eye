@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19426974.svg)](https://doi.org/10.5281/zenodo.19426974)
+
 GORGON EYE: Photogrammatic Analysis Tools 👁️
 
 Official repository of the methodological scripts developed for the GORGON Atlas project, dedicated to the programmatic extraction of frames and the generation of original analytical instruments: the filmic dynamogram and the spectrogram.
@@ -8,8 +10,22 @@ Gorgon Atlas: https://gorgon.lovable.app/atlas
 
 ---
 
-Cite this software:
-Hachero, B. (2026). Gorgon Eye: Photogrammatic Atlas Toolkit (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.19426974
+## How to Cite
+
+If you use **Gorgon Eye** in your research or project, please cite it as follows:
+
+```bibtex
+@software{hachero_2026_19426974,
+  author       = {Hachero, B.},
+  title        = {Gorgon Eye: Photogrammatic Atlas Toolkit},
+  month        = apr,
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.19426974},
+  url          = {[https://doi.org/10.5281/zenodo.19426974](https://doi.org/10.5281/zenodo.19426974)}
+}
+
 
 ---
 
